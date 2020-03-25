@@ -7,16 +7,35 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.min.css">
-    <title>Virtua Frontend Internship Test</title>
+    <title>Virtua Frontend Internship Test - Kacper  G.</title>
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
+      <button id="show-popup-form" class="btn btn-main" onclick="openThis()">Click me!</button>
+      <button id="hide-popup-form" class="thanks">Thank You!</button>
       <!-- Display success message below -->
-    </section>
+    
     <div class="popup">
       <!-- Here goes your popup form HTML code -->
+      <div class="close" onclick="closeThis()">&times;</div>
+
+      <form id="form" action="#" name="theForm" onsubmit="return isEmpty()">
+        <h1>Login</h1>
+
+        <input type="email" placeholder="E-mail" class="inputs" name="mail">
+        <input type="password" placeholder="Password" class="inputs second-input" name="pswd">
+
+        <label  id="agree">
+          <input type="checkbox" id="checkbox">
+          I agree to terms & conditions.
+        </label>
+        <button type="submit" class="submit">SUBMIT</button>
+
+
+
+      </form>
     </div>
+  </section>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
 </html>
