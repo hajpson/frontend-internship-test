@@ -34,7 +34,7 @@ $dark: rgb(0, 0, 0);
 
         &:hover {
         background-color: $candy;
-        transition: background-color 0.5s;
+        transition: background-color .5s;
     }
 }
 
@@ -63,7 +63,7 @@ $dark: rgb(0, 0, 0);
 }
 
 .second-input {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 10px;
 }
 
 .submit {
@@ -74,8 +74,8 @@ $dark: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 12px;
     margin: 15px 0;
-    width: 100%;
     padding: 15px;
+    width: 100%;
 
         &:hover {
         background-color: $candy;
@@ -84,6 +84,9 @@ $dark: rgb(0, 0, 0);
 }
 
 .thanks {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: endUp;
     appearance: none;
     background: transparent;
     border: 0;
@@ -94,9 +97,6 @@ $dark: rgb(0, 0, 0);
     outline: none;
     padding: 0 20px;
     transition: transform .5s ease;
-    animation-name: endUp;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
 }
 
 @keyframes endUp {
